@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.protruly.minaclient.MainActivity" >
+
+   <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+    	android:singleLine="false"
+    	android:maxLines="50"
+        android:text="@string/hello_world" />
+    
+    <TextView
+        android:id="@+id/id_tv_event"
+        android:layout_below="@id/id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+    	android:singleLine="false"
+    	android:maxLines="50"
+        android:text="@string/hello_world" />
+     <!--
+    <Button
+        android:id="@+id/id_bt_bind"
+        android:layout_below="@id/id_tv_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定" /> -->
+     <!--
+    <Button
+        android:id="@+id/id_bt_enter_capture"
+        android:layout_below="@id/id_tv_event"
+        android:layout_toRightOf="@id/id_bt_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入拍照模式" />
+    
+    <Button
+        android:id="@+id/id_bt_count"
+        android:layout_below="@id/id_bt_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取个数" />
+    
+    <Button
+        android:id="@+id/id_bt_exit_capture"
+        android:layout_below="@id/id_bt_bind"
+        android:layout_toRightOf="@id/id_bt_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出拍照模式" />
+    
+    <Button
+        android:id="@+id/id_bt_fileinfo"
+        android:layout_below="@id/id_bt_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件信息" />
+    
+    <Button
+        android:id="@+id/id_bt_capute"
+        android:layout_below="@id/id_bt_fileinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照" />
+    
+    <Button
+        android:id="@+id/id_bt_video_start"
+        android:layout_below="@id/id_bt_capute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录像开始" />
+    
+    <Button
+        android:id="@+id/id_bt_video_stop"
+        android:layout_below="@id/id_bt_video_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录像结束" />
+    
+    <Button
+        android:id="@+id/id_bt_remote_capute"
+        android:layout_below="@id/id_bt_video_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程拍照" />
+    
+    <Button
+        android:id="@+id/id_bt_remote_video_start"
+        android:layout_below="@id/id_bt_remote_capute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程录像开始" />
+    
+    <Button
+        android:id="@+id/id_bt_remote_video_stop"
+        android:layout_below="@id/id_bt_remote_video_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程录像结束" /> -->
+  <!--   <Button
+        android:id="@+id/id_bt_remote_get_volume"
+        android:layout_below="@id/id_tv_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取音量" />
+    <Button
+        android:id="@+id/id_bt_remote_set_volume"
+        android:layout_below="@id/id_bt_remote_get_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置音量" />
+    <Button
+        android:id="@+id/id_bt_remote_get_ssid"
+        android:layout_below="@id/id_bt_remote_set_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取ssid" />
+    <Button
+        android:id="@+id/id_bt_remote_set_ssid"
+        android:layout_below="@id/id_bt_remote_get_ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置ssid" />
+    <Button
+        android:id="@+id/id_bt_remote_get_ssidkey"
+        android:layout_below="@id/id_bt_remote_set_ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取ssidkey" />
+    <Button
+        android:id="@+id/id_bt_remote_set_ssidkey"
+        android:layout_below="@id/id_bt_remote_get_ssidkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置ssidkey" />  -->
+	 <ListView 
+	    android:id="@+id/test_item_view"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:layout_below="@id/id_tv_event"
+	    android:divider="#00000000"
+		android:dividerHeight="18dp"
+	    android:padding="20dip">
+	</ListView>
+</RelativeLayout>
